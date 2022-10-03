@@ -1,0 +1,40 @@
+html,body{
+    margin: auto;
+}
+
+@keyframes goaround{
+    0%{
+        background-color: red; left: 0px; top: 0px;
+        rotate: 0deg;
+    }
+    25%{
+        background-color: darkred; left:300px; top: 0px;
+        rotate: 90deg;
+        border-radius: 25%;
+    }
+    50%{
+        background-color: palevioletred; left: 300px; top: 300px;
+        rotate: 180deg;
+        border-radius: 50%;
+    }
+    75%{
+        background-color: pink; left: 0px; top: 300px;
+        rotate: 270deg;
+        border-radius: 25%;
+    }
+    100%{
+        background-color: red; left: 0px; top: 0px;
+        rotate: 360deg;
+    }
+
+
+}
+.hjärta{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    animation: goaround 4s infinite;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+}
